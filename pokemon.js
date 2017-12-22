@@ -1,6 +1,5 @@
 $(document).ready(function() {
-  $.get('http://pokeapi.co/media/sprites/pokemon/413.png', function(data) {
-    $('#container').html(data);
-  });
-
+    for (var i = 0; i < 151; i++) {
+      $('body').append(`<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/${i}.png">`)
+    }
 })
